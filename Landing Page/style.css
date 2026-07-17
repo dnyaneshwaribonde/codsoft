@@ -1,0 +1,441 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f5f2;
+    color:#333;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+header{
+    width:100%;
+    background:#3e2723;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    color:white;
+    font-size:32px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffb74d;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:90%;
+    margin:auto;
+    padding:80px 0;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:60px;
+    color:#3e2723;
+}
+
+.hero-text h2{
+    color:#ff9800;
+    margin:15px 0;
+}
+
+.hero-text p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.hero button{
+    padding:15px 35px;
+    border:none;
+    background:#6d4c41;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+.hero button:hover{
+    background:#4e342e;
+}
+
+.hero-image img{
+    width:500px;
+    max-width:100%;
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:90%;
+    margin:auto;
+    padding:80px 0;
+    gap:50px;
+}
+
+.about-image img{
+    width:720px;
+    height:400px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+.about-content h2{
+    font-size:45px;
+    color:#3e2723;
+    margin-bottom:20px;
+}
+
+.about-content p{
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.about-content button{
+    padding:14px 30px;
+    border:none;
+    background:#6d4c41;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.about-content button:hover{
+    background:#4e342e;
+}
+
+/* ===========================
+   MENU
+=========================== */
+
+.menu{
+    background:#efebe9;
+    padding:80px 5%;
+    text-align:center;
+}
+
+.menu h2{
+    font-size:45px;
+    margin-bottom:40px;
+    color:#3e2723;
+}
+
+.menu-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.menu-card{
+    width:300px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.menu-card:hover{
+    transform:translateY(-10px);
+}
+
+.menu-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.menu-card h3{
+    margin:20px 0 10px;
+}
+
+.menu-card p{
+    padding:0 20px;
+}
+
+.menu-card span{
+    display:block;
+    margin:20px;
+    color:#ff9800;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.menu-card button{
+    margin-bottom:20px;
+    padding:12px 25px;
+    background:#6d4c41;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.menu-card button:hover{
+    background:#4e342e;
+}
+
+/* ===========================
+   FEATURES
+=========================== */
+
+.features{
+    padding:80px 5%;
+    text-align:center;
+}
+
+.features h2{
+    font-size:45px;
+    color:#3e2723;
+    margin-bottom:40px;
+}
+
+.feature-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.feature-card{
+    width:300px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+}
+
+.icon{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+/* ===========================
+   REVIEWS
+=========================== */
+
+.reviews{
+    background:#efebe9;
+    padding:80px 5%;
+    text-align:center;
+}
+
+.reviews h2{
+    font-size:45px;
+    margin-bottom:40px;
+}
+
+.review-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.review-card{
+    width:300px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.review-card img{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+.stars{
+    color:gold;
+    margin:15px 0;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact{
+    padding:80px 5%;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:45px;
+    margin-bottom:40px;
+}
+
+.contact form{
+    width:600px;
+    max-width:100%;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:2px solid #ddd;
+    border-radius:8px;
+    outline:none;
+}
+
+.contact button{
+    padding:15px 35px;
+    background:#6d4c41;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.contact button:hover{
+    background:#4e342e;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#3e2723;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer h2{
+    margin-bottom:15px;
+}
+
+.social-icons{
+    margin:20px 0;
+}
+
+.social-icons a{
+    text-decoration:none;
+    font-size:30px;
+    margin:0 10px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+    margin-top:20px;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero,
+.about{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text{
+    width:100%;
+    margin-bottom:30px;
+}
+
+.about-content{
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:45px;
+}
+
+.about-content h2,
+.menu h2,
+.features h2,
+.reviews h2,
+.contact h2{
+    font-size:35px;
+}
+
+.hero-image img,
+.about-image img{
+    width:100%;
+    max-width:350px;
+}
+
+}
